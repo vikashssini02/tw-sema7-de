@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEMA 7™ – Natürliche Stoffwechsel-Unterstützung</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary-red:#C62828;
+  --dark-red:#9B1C1C;
+  --bg-start:#FFFFFF;
+  --bg-end:#F4F4F4;
+  --text-dark:#2C3E50;
+  --text-light:#5A6B7D;
+}
+
+/* BASE */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;color:var(--text-dark);line-height:1.5}
+
+/* CONTAINER */
+.container{max-width:1100px;margin:0 auto;padding:15px}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,var(--bg-start),var(--bg-end));
+  padding:20px 1px 40px;
+  border-radius:0 0 30px 30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.hero-content{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.hero-text{flex:1;max-width:600px}
+
+/* LOGO */
+.logo{
+  font-size:1.5rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+.logo span{color:var(--primary-red)}
+
+h1{
+  font-size:2.2rem;
+  font-weight:800;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+.sub-headline{
+  font-size:1.2rem;
+  color:var(--text-light);
+  margin-bottom:30px;
+}
+
+/* IMAGE */
+.hero-img{flex:1;text-align:center}
+.hero-img img{
+  max-width:100%;
+  filter:drop-shadow(0 20px 30px rgba(0,0,0,.15));
+  transform:rotate(-5deg);
+}
+
+/* TRUST BADGES (ADDED) */
+.trust-badges{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:15px 0 25px;
+}
+.trust-badges img{
+  height:48px;
+  width:auto;
+}
+
+/* CTA – SAME AS TRIVEXOL */
+.cta-group{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  max-width:500px;
+}
+.cta-btn{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 42px;
+  background:var(--primary-red);
+  color:#fff;
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:700;
+  font-size:1.7rem;
+  transition:.3s;
+  box-shadow:0 5px 15px rgba(198,40,40,.35);
+}
+.cta-btn.at{background:var(--dark-red)}
+.cta-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(198,40,40,.45);
+}
+.btn-icon{font-size:1.5rem}
+
+/* SOCIAL PROOF */
+.social-proof{text-align:center;padding:1px 0;background:#fff}
+.reviews-img{width:100%;max-width:1100px;margin:0 auto}
+
+/* FOOTER */
+footer{
+  background:#f8f9fb;
+  padding:1px 20px;
+  text-align:center;
+  font-size:.8rem;
+  color:var(--text-light);
+  border-top:1px solid #eee;
+}
+.footer-links a{
+  color:var(--text-dark);
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:300;
+  font-size:.8rem;
+}
+.disclaimer-box{
+  max-width:900px;
+  margin:0 auto;
+  font-size:.8rem;
+  line-height:1.4;
+  opacity:.85;
+}
+
+/* EXIT POPUP – UNTOUCHED */
+#exitPopup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.popup-box{
+  background:#fff;
+  padding:30px;
+  max-width:420px;
+  width:90%;
+  border-radius:16px;
+  text-align:center;
+  animation:popupIn .4s ease;
+}
+.popup-img{
+  max-width:160px;
+  margin:0 auto 15px;
+  display:block;
+}
+#countdown{
+  font-size:2rem;
+  font-weight:800;
+  color:#C62828;
+  margin:10px 0 20px;
+}
+.popup-yes{
+  display:block;
+  padding:16px;
+  border-radius:50px;
+  background:#C62828;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:1.1rem;
+  box-shadow:0 6px 18px rgba(198,40,40,.4);
+}
+@keyframes popupIn{
+  from{opacity:0;transform:scale(.85)}
+  to{opacity:1;transform:scale(1)}
+}
+
+/* MOBILE FIXES (CRITICAL) */
+@media(max-width:768px){
+  .hero-content{
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero-img{
+    order:-1;
+    margin-bottom:10px;
+  }
+  .hero-img img{
+    max-width:72%;
+    transform:none;
+  }
+  h1{
+    font-size:1.9rem;
+  }
+  .sub-headline{
+    margin-bottom:35px;
+  }
+  .cta-group{
+    margin:0 auto;
+  }
+}
+
+@media(max-width:480px){
+  .popup-box{padding:25px}
+  #countdown{font-size:1.8rem}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="container hero-content">
+
+<div class="hero-text">
+  <div class="logo">SEMA 7<span>™</span></div>
+
+  <h1>Der natürliche Weg zur Unterstützung Ihres Stoffwechsels.</h1>
+
+  <p class="sub-headline">
+    SEMA 7 unterstützt den Stoffwechsel, fördert den Fettabbau,
+    hilft Heißhunger zu reduzieren und trägt zur Blutzucker-Balance bei –
+    ohne aggressive Stimulanzien. Prüfen Sie jetzt die Verfügbarkeit in Ihrer Region.
+  </p>
+
+  <div class="cta-group">
+    <a href="/click" class="cta-btn tracker-link">
+      <span>DEUTSCHLAND</span>
+      <span class="btn-icon">➜</span>
+    </a>
+
+    <a href="/click" class="cta-btn tracker-link at">
+      <span>ÖSTERREICH</span>
+      <span class="btn-icon">➜</span>
+    </a>
+  </div>
+</div>
+
+<div class="hero-img">
+  <img src="images/sema7.webp" alt="SEMA 7 Nahrungsergänzung">
+
+  
+</div>
+
+</div>
+</section>
+
+<section class="social-proof">
+  <div class="container">
+    <img src="images/reviews.webp" class="reviews-img" alt="Kundenbewertungen">
+  </div>
+</section>
+
+<footer>
+<div class="container">
+  <div class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="agb.html">AGB</a>
+  </div>
+
+  <div class="disclaimer-box">
+    <p><strong>Haftungsausschluss:</strong> Nahrungsergänzungsmittel ersetzen keine medizinische Beratung.
+    Ergebnisse können variieren.</p>
+    <p style="margin-top:15px;">© 2025 SEMA 7. Alle Rechte vorbehalten.</p>
+  </div>
+</div>
+</footer>
+
+<!-- EXIT POPUP (UNCHANGED) -->
+<div id="exitPopup">
+  <div class="popup-box">
+    <img src="images/sema7.webp" alt="SEMA 7" class="popup-img">
+    <h2>Letzte Chance heute</h2>
+    <p>Verfügbarkeit endet in:</p>
+    <div id="countdown">02:00</div>
+    <a href="/click" class="popup-yes tracker-link">
+      JETZT VERFÜGBARKEIT SICHERN ➜
+    </a>
+  </div>
+</div>
+
+<script>
+let shown=false;
+let timeLeft=120;
+
+document.addEventListener("mouseleave",e=>{
+  if(e.clientY<0 && !shown){
+    shown=true;
+    document.getElementById("exitPopup").style.display="flex";
+    startTimer();
+  }
+});
+
+function startTimer(){
+  const el=document.getElementById("countdown");
+  const timer=setInterval(()=>{
+    const m=Math.floor(timeLeft/60);
+    const s=timeLeft%60;
+    el.textContent=`0${m}:${s<10?'0'+s:s}`;
+    timeLeft--;
+    if(timeLeft<0) clearInterval(timer);
+  },1000);
+}
+</script>
+
+<script>
+(function(){
+  var m=location.href.match(/[?&]gclid=([^&#]+)/);
+  if(m) localStorage.setItem('gclid',m[1]);
+})();
+</script>
+
+
+
+</body>
+</html>
